@@ -97,7 +97,7 @@ FirstName2	LastName2	Email2	222
 FirstName3	LastName3	Email3	333
 
 Testing:
-I have used postman and curl to exercise these APIs. I am working on the go test cases.
+I have used postman and curl to exercise these APIs. I have created go test cases.
 
 I have used enough locking mechanism using Locks to ensure data consistency considering parallel access from multiple clients.
 
