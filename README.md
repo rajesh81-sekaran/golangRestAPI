@@ -101,4 +101,17 @@ I have used postman and curl to exercise these APIs. I have created go test case
 
 I have used enough locking mechanism using Locks to ensure data consistency considering parallel access from multiple clients.
 
+Code organization:
+Root directory:
+rest
+
+Subdirectories
+common
+      data.go : Contains the constants and global data types used by the server
+      struct.go : This file deals with converting the slice of maps to slice of structure
+      file.go : This file deals with storing the data to csv file and retrieving the data from csv files
+      handler.go : This file has the http handlers for different services
+      common_test.go : test file for the common package
+main
+    main.go : main file which starts the http server. It uses the common package files
 
